@@ -120,13 +120,12 @@ h4,h5,h6{
     width:170px;
     height:47px;
     border-radius: 8px;
-    transition: all .5;
     font-size: 1.25em;
     color:#000000;
     font-family:"Cairo-Bold";
 margin-right:44px;
 border:2px solid transparent;
-transition: all .5s;;
+transition: all .5s;
 
 }
 .joinUs:hover{
@@ -275,9 +274,9 @@ color:#919191;
     background-color: black;
     position: relative;
 }
-.aboutUsBox,.leftSideBox{
+.aboutUsBox,.leftSideBox,.programContent{
     padding:24px 30px;
-    background-image: linear-gradient(120deg  , rgba(0,0,0,.65) 0% , rgba(71, 69, 69, .65) 80%  );
+    background-image: linear-gradient(25deg  , rgba(0,0,0,.65) 0% , rgba(71, 69, 69, .65) 90%  );
     height:350px;
 }
 .aboutLogo{
@@ -329,6 +328,144 @@ display: flex;}
 }
 #visionSlider{
     height:100%;
+}
+.programBody{
+    display: none;
+}
+.programContent{
+    margin-bottom: 30px;
+    height: auto;
+}
+.programHeader h3 {
+    font-size:1.1em;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.programHeader h3 a{
+    color:white;
+}
+.programHeader i{
+    float: left;
+}
+.programBody p{
+    color:white;
+    font-size: 1em;
+    line-height: 2;
+}
+.programPage {
+    padding-bottom: 50px;;
+}
+.programPage .aboutLogo{
+left:15%;
+right:auto
+}
+.nav-tabs{
+    text-align: center;
+    justify-content: center;
+    background-color: #131212;
+}
+.nav-tabs .nav-link{
+font-size:1.5em;
+color:white;
+padding:10px 0;
+margin-left:55px;
+}
+
+.nav-tabs .nav-item:last-child .nav-link{
+    margin-left:0
+}
+.nav-tabs .nav-link.active span svg path:last-child{
+    fill:#ffcc08 !important;
+}
+#pills-tabConten{
+margin-top:66px
+}
+.mediaBody{
+    padding-top:0;
+}
+#pills-tab{
+    border-bottom: 0;;
+}
+.nav-tabs .nav-item.show .nav-link.nav-tabs .nav-item .nav-link:hover{
+    border:0;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link{
+    background-color: transparent;
+    border:0;
+}
+.nav-tabs .nav-link.active{
+    background-color: transparent;
+    color:#ffcc08;   
+
+    border-bottom: 1px solid  #ffcc08;
+
+}
+
+button:focus{
+    outline: 0;
+}
+.newsBox h6{
+    font-size: 1em;
+    margin-top:20px;
+    margin-bottom:28px;
+    overflow: hidden;
+    font-family:"Cairo-Regular";
+}
+.newsBox{
+    cursor: pointer;
+    margin-bottom: 33px;;
+}
+.newsBox:hover h6{
+color:#ffcc08;
+}
+.date{
+    font-size:.9em;
+    color:#ffcc08;
+}
+.date i{
+    width:20px;
+    height: 15px;
+    display: inline-block;
+    margin-left:5px;
+}
+.tag{
+    width:86px;
+    border-radius: 16px;
+    height: 32px;;
+    margin-top:30px;
+    background-color: #1E1E1B;
+    padding:7px;
+}
+.tag i{
+width:18px;
+margin-left:12px;
+display: block;
+float: right;
+}
+.newsImg{
+    position: relative;
+    width:100%;
+    height:180px;
+    overflow: hidden;
+    filter: grayscale(100%);
+
+}
+.newsBox:hover .newsImg img{
+    transform:scale(1.1);
+    transition: all .5s;;
+}
+.newsImg img{
+    height: 100%;;
+    transition: all .5s;;
+}
+.newsImg video{
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
 }
 @media(min-width:300px) and (max-width :767px){
     body{
@@ -425,6 +562,13 @@ text-align: right;
 .aboutUsBox,.leftSideBox{
     height: auto;
     margin:10px 0
+}
+.aboutLogo{
+    width:100%;
+    left:0;
+}
+.innerBody{
+    padding-bottom:50px;
 }
 }  
 @media(min-width:768px) and (max-width:1023px){

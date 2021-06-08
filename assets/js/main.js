@@ -1,64 +1,21 @@
 jQuery(function ($) {
 
 
-    $('.articlesCarousel').owlCarousel({
-        autoplay: true,
-        loop: false,
-        margin: 10,
-        nav: true,
-        rtl:true,
-        dots:false,
-        navText : ['<i class="fas fa-arrow-right"></i>','<i class="fas fa-arrow-left"></i>'],
-    
-        responsive: {
-          0: {
-            items: 1,
-    
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 4,
-    
-          }
-          
-    
-        }
-      });
-      $('.middleEastSlider').owlCarousel({
-        autoplay: false,
-        loop: false,
-        margin: 15,
-        nav: false,
-        rtl:true,
-        dots:false,
-    
-        responsive: {
-          0: {
-            items: 1,
-    
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 3,
-    
-          }
-          
-    
-        }
-      });
+  $('.accordion-panel').click(function () {
+    $('.accordion-panel').not(this).find('i:first').removeClass(' fas fa-chevron-down  ').addClass('fas fa-chevron-up ');
+    $(this).find('i:first').toggleClass('fas fa-chevron-down fas fa-chevron-up');
+})
+
+$('.programHeader').click(function () {
+    $(this).parent().find('.programBody').slideToggle(400);
+});
+$(".programHeader").on("click", "a", function(e) { e.preventDefault() });
+
+
       $(".close").click(function(){
           $(".collapse").removeClass('show')
       });
-      $(".searchboxclose").click(function(){
-        $(".mobilesearchBox").css("display","none");
-    });
-      $(".mobilesearch").click(function(){
-        $(".mobilesearchBox").css("display","block");
-      });
+
 
 
 });
