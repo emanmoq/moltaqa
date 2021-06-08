@@ -139,7 +139,7 @@ transition: all .5s;;
     padding-top:30px;
     padding-bottom: 118px;
 }
-.carousel-inner{
+#heroSlider .carousel-inner{
     height: 450px;
     overflow: hidden;
 }
@@ -158,7 +158,9 @@ transition: all .5s;;
 .sliderdetails{
     text-align: center;
 }
-
+.carousel-indicators li{
+    border: 0;
+}
 .carousel-indicators{
     bottom: -300px;
     margin: auto;
@@ -250,6 +252,84 @@ display: inline-block;
     width:85%;
 
 }
+.innerHeader{
+ padding:50px 0;   
+}
+.innerHeader h2{
+    font-size: 1.5em;
+    font-family:"Cairo-Regular";
+
+}
+.innerheaderLinks{
+    text-align: left;
+}
+.innerheaderLinks a{
+font-size:1em;
+color:#919191;
+}
+.innerheaderLinks a:hover{
+    color:#FFC300
+}
+.innerBody{
+    padding:134px 0 176px;
+    background-color: black;
+    position: relative;
+}
+.aboutUsBox,.leftSideBox{
+    padding:24px 30px;
+    background-image: linear-gradient(120deg  , rgba(0,0,0,.65) 0% , rgba(71, 69, 69, .65) 80%  );
+    height:350px;
+}
+.aboutLogo{
+    position: absolute;
+    width: 30%;
+    top:0;
+    left: 30%;
+    z-index: 0;
+}
+.aboutUsBox p,.Vision p{
+    font-size: 1em;
+    line-height: 2;
+}
+.aboutUsBox h3{
+font-size:1.1em;
+margin-bottom:18px;
+}
+.leftSideBox{
+    position: relative;
+    padding:0;
+}
+.leftSideBox:before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:2px;
+    top:0;
+    left:0;
+    background-image: linear-gradient(to left , #FFCC08 0%, rgba(0,0,0,0) 90%);
+}
+.Vision h3{
+    font-size:1.1em;
+    color:white;
+    margin-bottom:9px;
+}
+.Vision h3 i{
+    color:#FFC300;
+    margin-left:15px;
+}
+#visionSlider .carousel-indicators {
+    bottom: 0;
+display: flex;}
+#visionSlider .carousel-indicators li{
+    width:48%;
+
+}
+#visionSlider .carousel-inner{
+    padding:28px 25px;
+}
+#visionSlider{
+    height:100%;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -330,6 +410,7 @@ width:23px;
 .timeAdd, .seeDetails{
     display: block;
 }
+
 .carousel-indicators li {
     width: 14%;}
     .carousel-indicators{
@@ -340,6 +421,10 @@ text-align: right;
 }
 .timeAdd{
     margin-bottom: 20px;;
+}
+.aboutUsBox,.leftSideBox{
+    height: auto;
+    margin:10px 0
 }
 }  
 @media(min-width:768px) and (max-width:1023px){
