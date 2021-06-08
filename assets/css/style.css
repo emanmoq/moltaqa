@@ -1,0 +1,418 @@
+@font-face{
+    font-family:"Cairo-Black";
+    src:url("../fonts/Cairo-Black.ttf");
+}
+@font-face{
+    font-family:"Cairo-Bold";
+    src:url("../fonts/Cairo-Bold.ttf");
+}
+@font-face{
+    font-family:"Cairo-ExtraLight";
+    src:url("../fonts/Cairo-ExtraLight.ttf");
+}
+@font-face{
+    font-family:"Cairo-Light";
+    src:url("../fonts/Cairo-Light.ttf");
+}
+@font-face{
+    font-family:"Cairo-Regular";
+    src:url("../fonts/Cairo-Regular.ttf");
+}
+@font-face{
+    font-family:"Cairo-SemiBold";
+    src:url("../fonts/Cairo-SemiBold.ttf");
+}
+img{
+    width:100%;
+}
+ul{
+    padding:0;
+    margin:0;
+}
+form{
+    margin:0
+}
+a{
+    color:black
+}
+a:hover{
+    text-decoration: none;
+}
+header{
+    height:116px;
+    z-index: 9999999;
+    background-color: black;
+}
+.logo{
+    width:110px;
+    display: block;
+    margin-left:50px;
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family:"Cairo-Regular";
+    background-color:black;
+    position: relative;
+    background-image: url(../images/background.png);
+
+}
+body:before{
+background-color: #000000;
+position: absolute;
+content:"";
+top:0;
+width:100%;
+height:100%;
+right:0;
+left:0;
+opacity: .8;
+
+}
+h1,h2,h3{
+    font-family:"Cairo-Bold";
+
+}
+h4,h5,h6{
+    font-family:"Cairo-Black";
+}
+
+.socialIcons li:last-child{
+    margin-left:0;
+}
+
+
+.socialIcons li a{
+    color:#1191D0;
+    font-size: 20px;
+}
+
+.socialIcons li a i {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color:white;
+    font-size:1.125em;
+    padding:0 17px;
+}
+
+.navbar.navbar-expand-lg{
+    float: right;
+    padding-top:30px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color:#FFC300
+}
+.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link{
+    padding-right:0;
+    padding-left:26px
+}
+.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link.mobileHome{
+    padding:0 17px;
+
+}
+
+.joinUs{
+    background-color: #FFC300;
+    width:170px;
+    height:47px;
+    border-radius: 8px;
+    transition: all .5;
+    font-size: 1.25em;
+    color:#000000;
+    font-family:"Cairo-Bold";
+margin-right:44px;
+
+
+}
+.hero{
+    padding-top:30px;
+    padding-bottom: 118px;
+}
+footer{
+    background-color: black;
+    padding:27px 0;
+}
+
+@media(min-width:300px) and (max-width :767px){
+    body{
+        font-size:12px;
+    }
+    header{
+        height: auto;
+        background-image:none;
+        border-top-width: 12px;
+        border-top-style: solid;
+        border-image: linear-gradient(45deg,#36BCBB 0%, #1191D0 100%  ) 1;
+    }
+    .topHeader{
+        display: none;
+    }
+    header .searchBox{
+        display: none;
+    }
+    .navbar-toggler{
+        background-color: #F8F7FA;
+        border-radius: 8px;
+        width:45px;
+        height:45px;
+        position: relative;
+        padding:10px;
+}
+.navbar-toggle i{
+    content:"";
+background-color: #2F3D44;
+display: block;
+margin-bottom: 5px;
+width:20px;
+height: 3px;
+}
+.navbar-toggle i:first-child{
+width:23px;
+}
+.navbar-toggle i:last-child{
+    width:17px;
+    margin-bottom: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color:#2F3D44;
+    margin-bottom: 30px;;
+}
+
+.navbar-collapse.collapse{
+    background-color: rgba(255,255,255,.97);
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 999999999999;
+    height: 100vh;
+    width: 97vw;
+    padding:19px;
+}
+.collapse .logo{
+    margin:auto;
+    margin-bottom: 30px;;
+}
+.close{
+    float:left;
+
+}
+.close span{
+    width:45px;
+    height:45px;
+    background-color: #F8F7FA;
+    border-radius: 8px;
+}
+.searchboxclose.close span{
+    background-color: transparent;
+    }
+    .searchboxclose.close {
+        position: absolute;
+        top:0px;
+        left:5px;
+    }
+.topNews{
+    margin-right:0;
+}
+.hero{
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.categ {
+    position: relative;
+}  
+.newsBox{
+    height:auto;
+    margin-bottom:50px;
+}
+.newsImg{
+    height:100px;
+}
+.middleEast {
+    padding-top:33px
+}
+.middleEast .title{
+    color:#2F3D44
+}
+.middleEast .sectionTitle .circle{
+    background-image: none;
+    background-color: #2F3D44;
+}
+.middleEast  .categ{
+    position: absolute;
+}
+.middleEast .newsImg{
+    height:200px;
+}
+.freeBox{
+    height:180px;
+}
+.middleEast{
+    padding-bottom: 190px;;
+}
+.footerSocial{
+    float: none !important;
+    margin: auto;
+    text-align: center;
+}
+.footerText{
+    margin-top:30px;
+    margin-bottom:40px;
+}
+.footerLogo{
+    width:260px;
+    margin: auto;
+}
+.footerMenu{
+    text-align: right;
+    padding-bottom: 40px;
+}
+        .footerMenuSection{
+    padding-top:30px;
+}
+.links{
+    float: none !important;
+    text-align: center;
+}
+.copyRights{
+    text-align: center;
+}
+.links a:first-child{
+    margin-right:0;
+}
+.mobilesearch{    float: left!important;
+    background: #F8F7FA;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+text-align: center;
+font-size:24px;
+justify-content: center;
+
+display: flex !important;
+align-items: center;
+
+}
+.mobilesearch i{
+    display: flex;
+    color:#2F3D44;
+    justify-content: center;
+}
+.navbar.navbar-expand-lg{
+    width:100%;
+}
+.footerMenu li{
+    padding:10px 0;
+    margin-left:50px;
+}
+.contactInfoSec li{
+    margin-bottom: 0;;
+}
+.contactInfo{
+    margin-bottom: 72px;
+}
+.contactInfoSec li:last-child .contactInfo:last-child{
+    margin-bottom: 0;
+}
+.googlemap{
+    margin:35px 0;
+    
+}
+.googlemap object{
+    height:280px;
+}
+.contactForm .form-group.marginGroup{
+    margin-left:0;
+
+}
+.contactForm .form-group{
+
+    width:100%;
+}
+.sendBtn{
+    left:43%;
+}
+.headerLinks{
+    float: none !important;
+}
+.innerHeader h2{
+    margin-bottom: 10px;;
+}
+.contactUs{
+    padding:32px 0 50px;
+}
+.contactInfoSec li:last-child .contactInfo:last-child .infoDetails{
+    float: none;
+    text-align: center;
+}
+.contactSocial{
+    text-align: center;
+}
+.newsDetailsSec .topNews{
+    position: relative;
+    bottom: auto;
+    padding:0;
+    margin-bottom: 30px;
+    margin-top:15px;
+}
+.heronewsDetails{
+    margin-top:15px;
+}
+.heronewsDetails h4{
+    font-family:"DUBAI-MEDIUM";
+  
+}
+.newsDetailsSec .heroNewsImg{
+    margin-bottom: 0;
+}
+.detailsNewsPge .newsBox .newsImg{
+    height:100px;
+}
+.middleEastsection .newsBox .newsImg{
+    height:100px;
+}
+.marginBottomsection{
+    margin-bottom: 40px;;
+}
+.middleEastsection .newsBox{
+    height:250px;
+}
+.pagination{
+    justify-content: center;
+}
+}  
+@media(min-width:768px) and (max-width:1023px){
+    .heronewsDetails{
+margin-top:0;
+    }
+    header .searchBox{
+        display: none;
+    }
+    body{
+        font-size: 14px;
+    }
+    .socialIcons li{
+        margin-left:15px;
+    }
+    .footerMenuSection {
+        margin-top: 20px;
+        padding-top:40px;}
+        .footerMenu{
+            padding-bottom:30px;
+        }
+.newsImg img{
+    width:100%;
+}
+.contactForm .form-group.marginGroup {
+    margin-left: 17px;
+}
+.contactInfoSec li .contactInfo:last-child{
+    margin-left:0;
+}
+}         
