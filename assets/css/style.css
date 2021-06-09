@@ -547,6 +547,117 @@ margin-top:27px;
 background-image: linear-gradient( 45deg ,rgba(0,0,0,.64) 0, rgba(71, 69, 69, .6) 100% );
 padding:30px;
 }
+.contactTitle{
+    font-size :1.1em;
+    color:white;
+    margin-bottom: 45px;
+    font-family:"Cairo-Bold";
+}
+.contactAddress h6{
+    font-family:"Cairo-Bold";
+    font-size:.8em;
+    color:#ffcc08;
+    margin-bottom:10px;
+}
+.contactAddress{
+    margin-right:22px;
+    float:right;
+    width: 65%;
+}
+.contactIcon{
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    border:2px solid #373535;
+    padding:11px;
+    float:right;
+}
+.contactIcon i{
+    color:white;
+    font-size:1.2em;
+}
+.address{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.address li{
+    font-size:.8em;
+    color:white;
+    margin-bottom:5px;
+}
+.contactInfo{
+    margin-bottom: 40px;;
+
+}
+.socialIconsContact {
+    margin-top: 15px;;
+}
+.socialIconsContact li{
+    display: inline-block;
+    margin-left:15px;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid #373535;
+    padding:4px;
+}
+.socialIconsContact li:last-child{
+    margin-left:0;
+}
+.socialIconsContact li svg{
+    width:100%;
+}
+.socialIconsContact li:hover svg path:last-child{
+    fill:#ffcc08
+}
+.contactForm .form-group{
+    width:47%;
+    display: inline-block;
+    margin-bottom: 34px;;
+}
+.contactForm .form-group.marginleft{
+margin-left:25px;
+}
+.contactForm .form-control{
+    width:100%;
+    border:2px solid #373535;
+    border-radius: 24px;
+    background-color: transparent;
+    height:54px;
+}
+.contactForm .form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.contactForm .form-group.textareagroup{
+    width:100%;
+}
+.sendBtn{
+    display: block;
+    width:102px;
+    height:54px;
+    border-radius: 27px;
+    margin:auto;
+    background-color: #FFCC08;font-size:1.1em;
+    color:#000000;
+    font-family:"Cairo-Bold";
+    margin-top:45px;
+    border:2px solid transparent;
+    transition: all .5s;
+  
+}
+.sendBtn:hover{
+    background-color: transparent;
+    border:2px solid #ffcc08;
+    transition: all .5s;
+    color: #ffcc08;
+}
+.contactForm .form-control.textareafromControl{
+    height:155px;
+    resize: none;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -649,6 +760,12 @@ text-align: right;
 }
 .innerBody{
     padding-bottom:50px;
+}
+.contactForm .form-group{
+    width: 100%;;
+}
+.contactForm .form-group.form-group.marginleft{
+    margin-left:0;
 }
 }  
 @media(min-width:768px) and (max-width:1023px){
