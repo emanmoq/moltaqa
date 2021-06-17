@@ -671,17 +671,13 @@ padding:30px;
     color:#ffcc08;
     margin-bottom:10px;
 }
-.contactAddress{
-    margin-right:22px;
-    float:right;
-    width: 65%;
-}
+
 .contactIcon{
-    width:45px;
-    height:45px;
+    width:35px;
+    height:35px;
     border-radius: 50%;
     border:2px solid #373535;
-    padding:11px;
+    padding:7px;
     float:right;
 }
 .contactIcon i{
@@ -697,7 +693,7 @@ padding:30px;
 .address li{
     font-size:.8em;
     color:white;
-    margin-bottom:5px;
+    margin-bottom:20px;
 }
 .contactInfo{
     margin-bottom: 40px;;
