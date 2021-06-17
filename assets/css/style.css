@@ -679,6 +679,7 @@ padding:30px;
     border:2px solid #373535;
     padding:7px;
     float:right;
+    margin-left:15px;
 }
 .contactIcon i{
     color:white;
@@ -694,6 +695,7 @@ padding:30px;
     font-size:.8em;
     color:white;
     margin-bottom:20px;
+    line-height: 33px;;
 }
 .contactInfo{
     margin-bottom: 40px;;
