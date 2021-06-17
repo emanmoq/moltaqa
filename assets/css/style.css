@@ -61,7 +61,6 @@ body{
     background-repeat: no-repeat;
     color:white;
     background-image: url(../images/background.png);
-
 }
 body:before{
 background-color: #000000;
@@ -135,8 +134,8 @@ transition: all .5s;
     color:white;
 }
 .hero{
-    padding-top:30px;
-    padding-bottom: 118px;
+    padding-top:60px;
+    padding-bottom: 120;
 }
 #heroSlider .carousel-inner{
     height: 450px;
@@ -161,11 +160,11 @@ transition: all .5s;
     border: 0;
 }
 .carousel-indicators{
-    bottom: -300px;
     margin: auto;
     text-align: center;
     display: block;
-    padding: 0
+    padding: 0;
+    bottom: -60px;;
 }
 .carousel-indicators li{
     width:16%;
@@ -180,13 +179,17 @@ transition: all .5s;
 .carousel-indicators .active{
     height:5px;
 }
+#hero-slider .carousel-item {
+    position: relative;
+}
 .heroText{
-    margin-top:44px;
-    margin-bottom:32px;
+position: absolute;
     font-family:"Cairo-Bold";
     font-size: 1.5em;
     color:white;
     text-align: center;
+    bottom:36px;
+    width:100%;
 }
 .smallLogo{
     margin:auto;
@@ -274,15 +277,24 @@ color:#919191;
     background-color: black;
     position: relative;
 }
-.aboutUsBox,.leftSideBox,.programContent{
+.aboutBody{
+    padding-top:40px;
+    padding-bottom: 14px;;
+}
+.leftSideBox,.programContent{
     padding:24px 30px;
-    background-image: linear-gradient(25deg  , rgba(0,0,0,.65) 0% , rgba(71, 69, 69, .65) 90%  );
+    background-image: linear-gradient(25deg  , rgba(0,0,0,.64) 48% , rgba(71, 69, 69, .64) 78%  );
     height:350px;
+}
+.aboutUsBox{
+    padding:24px 30px;
+    background-image: linear-gradient(25deg  , rgba(0,0,0,.64) 48% , rgba(71, 69, 69, .64) 78%  );
+    position: relative;
 }
 .aboutLogo{
     position: absolute;
-    width: 30%;
-    top:0;
+    width: 40%;
+    top:30%;
     left: 30%;
     z-index: 0;
 }
@@ -353,38 +365,44 @@ display: flex;}
     line-height: 2;
 }
 .programPage {
-    padding-bottom: 50px;;
+    padding-bottom: 50px;
+    padding-top:50px;
 }
 .programPage .aboutLogo{
 left:15%;
-right:auto
+right:auto;
+top:0;
+width:30%;;
 }
 .nav-tabs{
     text-align: center;
-    justify-content: center;
-    background-color: #131212;
 }
-.nav-tabs .nav-link{
-font-size:1.5em;
-color:white;
-padding:10px 0;
-margin-left:55px;
-}
+
+
 
 .nav-tabs .nav-item:last-child .nav-link{
     margin-left:0
 }
 .nav-tabs .nav-link.active span svg path:last-child{
-    fill:#ffcc08 !important;
+    fill:#000000 !important;
 }
 #pills-tabConten{
 margin-top:66px
 }
 .mediaBody{
-    padding-top:0;
+    padding-top:50px;
 }
 #pills-tab{
     border-bottom: 0;;
+}
+#pills-tab .nav-link{
+    text-align: center;
+}
+#pills-tab .nav-link span{
+    display: block;
+    width:32px;
+    margin: auto;
+    margin-bottom: 16px;;
 }
 .nav-tabs .nav-item.show .nav-link.nav-tabs .nav-item .nav-link:hover{
     border:0;
@@ -392,16 +410,110 @@ margin-top:66px
 }
 
 .nav-tabs .nav-link{
-    background-color: transparent;
     border:0;
+    font-size:1.5em;
+color:white;
+padding:20px 0;
+height:120px;
+border-radius: 16px;
+background-color: #131212;
+width: 100%;
+font-family:"Cairo-Bold";
+position: relative;
+
 }
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    border-top: 18px solid #FFCC08;
+    bottom:-18px;;
+    left:45%;
+    display: none;
+  }
 .nav-tabs .nav-link.active{
-    background-color: transparent;
-    color:#ffcc08;   
-
-    border-bottom: 1px solid  #ffcc08;
-
+    background-color: #FFCC08;
+    color:#000000;   
 }
+.nav-tabs .nav-link.active .arrow-down {
+    display: block;
+}
+.tab-content{
+    margin-top:50px;
+}
+.pillsTitle{
+    margin-bottom:50px;
+    font-size:1.5em;
+    color:white;
+
+    font-family:"Cairo-Bold";
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #000000;
+    background-image: none;
+    font-size:.9em;
+
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 192px;;
+    height: 50px;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: 25px;
+    border:1px solid #fff;
+  }
+  select {
+    flex: 1;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    padding:18px;
+  }
+  /* Arrow */
+  select {
+    flex: 1;
+    padding: 0 18px;;
+    color: #fff;
+    cursor: pointer;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 10px;;
+    left: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    color: #FFC300;
+    font-size:.8em;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  select option:hover{
+      background-color: #FFC300;
+  }
 
 button:focus{
     outline: 0;
