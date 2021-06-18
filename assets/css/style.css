@@ -931,6 +931,9 @@ height: 135px;;
     text-align: right;
     margin:20px 0
 }
+.innerBody{
+    padding:35px 0
+}
 }  
 @media(min-width:768px) and (max-width:1023px){
     .heronewsDetails{
