@@ -420,9 +420,11 @@ background-color: #131212;
 width: 100%;
 font-family:"Cairo-Bold";
 position: relative;
+z-index: 1;
 
 }
 .arrow-down {
+    z-index: -1;
     width: 0; 
     height: 0; 
     border-left: 18px solid transparent;
@@ -477,6 +479,7 @@ select {
     overflow: hidden;
     border-radius: 25px;
     border:1px solid #fff;
+    float:left
   }
   select {
     flex: 1;
@@ -768,6 +771,9 @@ margin-left:25px;
     height:155px;
     resize: none;
 }
+#pills-tab .nav-link span svg{
+    width:100%;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -783,7 +789,7 @@ margin-left:25px;
     height:auto
 }
     .navbar-toggler{
-        background-color: #F8F7FA;
+        background-color: black;
         border-radius: 8px;
         width:45px;
         height:45px;
@@ -792,7 +798,7 @@ margin-left:25px;
 }
 .navbar-toggle i{
     content:"";
-background-color: black;
+background-color: white;
 display: block;
 margin-bottom: 5px;
 width:20px;
@@ -828,7 +834,7 @@ width:23px;
 }
 .hero{
     padding-top:20px;
-    padding-bottom:100px;
+    padding-bottom:50px;
 }
 
 .copyRights{
@@ -848,12 +854,11 @@ width:23px;
 .timeAdd, .seeDetails{
     display: block;
 }
-
+.carousel-indicators{
+    bottom:-40px;
+}
 .carousel-indicators li {
     width: 14%;}
-    .carousel-indicators{
-        bottom: -350px;;
-    }
 .sliderdetails{
 text-align: right;
 }
@@ -876,6 +881,51 @@ text-align: right;
 }
 .contactForm .form-group.form-group.marginleft{
     margin-left:0;
+}
+#heroSlider .carousel-inner{
+    height:250px;
+}
+.carousel-control-next, .carousel-control-prev{
+    top:25%;
+}
+.heroText{
+    bottom:3px;
+    font-size:1.25em
+}
+.leftSideBox, .programContent{
+    padding:20px 9px;
+}
+.accordion-panel span{
+    float:right;
+    width:95%;
+    line-height: 1.5;
+}
+.nav-tabs .nav-item{
+    padding:0 5px
+}
+.nav-tabs .nav-link{
+    padding:8px 0;
+    height:80px;
+}
+#pills-tab .nav-link span{
+    width:25px;
+    margin-bottom: 3px;
+}
+.arrow-down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 42%
+}
+#pills-tab .nav-link{
+    font-size: 1em;;
+}
+.select{
+    float:none;
+    margin-bottom: 20px;;
+}
+.newsImg{
+height: 135px;;
 }
 }  
 @media(min-width:768px) and (max-width:1023px){
