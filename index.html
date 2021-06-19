@@ -69,7 +69,8 @@
             </ul>
 
           </div>
-          <a href="#" class="joinUs btn">انضم لنا</a>
+          <a href="#" class="joinUs btn" type="button" class="btn btn-primary" data-toggle="modal"
+            data-target="#joinModal"> انضم لنا</a>
 
         </nav>
       </div>
@@ -114,8 +115,9 @@
             <ol class="carousel-indicators">
               <li data-target="#heroSlider" data-slide-to="0" class="active"></li>
               <li data-target="#heroSlider" data-slide-to="1"></li>
+
               <li data-target="#heroSlider" data-slide-to="2"></li>
- 
+
             </ol>
           </div>
         </div>
@@ -127,15 +129,15 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
           <div class="CopyRights">
             <div class="footerLogo">
               <img src="assets/images/small.png" alt="">
             </div>
-            <p>جميع الحقوق محفوظة ©  2021</p>
+            <p>جميع الحقوق محفوظة © 2021</p>
           </div>
         </div>
-        <div class="col-md-4 ">
+        <div class="col-md-5 ">
           <ul class="socialIcons ">
 
             <li class="facebook">
@@ -153,6 +155,98 @@
     </div>
 
   </footer>
+  <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modalTitle" id="joinModalLabel">الانضمام لنا </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <form action="" class="contactForm joinForm row">
+              <div class="form-group col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">الاسم كامل</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6 ">
+              </div>
+              <div class="form-group col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">المدينة</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">الحي</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">رقم الجوال</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for=""> البريد الإلكتروني</label>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group textareagroup col-md-12">
+                <div class="row">
+                  <div class="col-md-3">
+                    <label for="">لماذا تريد الانضمام للملتقى</label>
+                  </div>
+                  <div class="col-md-9">
+                    <textarea name="" class="form-control textareafromControl"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-3">
+
+                  </div>
+                  <div class="col-md-9">
+                    <button class="btn sendBtn joinModalBtn" type="submit">انضمام</button>
+
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -162,6 +256,9 @@
   <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
 
   <script type="text/javascript" src="assets/js/main.js"></script>
+  <script>
+    $(".modal").modal("show")
+  </script>
 
 </body>
 

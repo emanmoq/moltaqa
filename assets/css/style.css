@@ -774,6 +774,58 @@ margin-left:25px;
 #pills-tab .nav-link span svg{
     width:100%;
 }
+.modal .modal-dialog{
+    max-width:60%;
+}
+.modal-content{
+    background-color: #505050;
+    border-radius: 24px;;
+    padding:60px 50px
+}
+.modal-header{
+    border-bottom: 0;
+    padding:0;
+    margin-bottom:40px;
+
+}
+.modal-header h5{
+    font-family:"Cairo-Bold";
+    font-size:1.5em;
+
+}
+.modal-header .close{
+    margin:0;
+    color:white;
+    opacity: 1;
+    padding: 0}
+
+    .joinForm label{
+        text-align: left;
+        display: block;
+        margin-left:19px;
+        font-size: .9em;
+        padding:10px 0;
+    }
+     .joinForm ,.joinForm .form-group .col-md-6,.col-md-3,.col-md-9{
+        padding:0;
+    }
+.joinForm  .form-control{
+border:2px solid white;
+color:white;
+font-size:.9em;
+border-radius: 27px;
+height:50px;
+
+}
+.joinForm .form-group{
+    margin-bottom: 20px;;
+}
+
+.joinModalBtn{
+    margin:0;
+    margin-top:37px;
+    width:150px;
+}
 @media(min-width:300px) and (max-width :767px){
     body{
         font-size:12px;
@@ -934,8 +986,30 @@ height: 135px;;
 .innerBody{
     padding:35px 0
 }
+.modal .modal-dialog{
+    max-width: 96%;
+}
+
+.joinForm label{
+    text-align: right;
+}
+.modal-content{
+    padding:25px
+}
+.modal-header{
+    padding:0 15px;
+}
 }  
 @media(min-width:768px) and (max-width:1023px){
+    .modal .modal-dialog{
+        max-width:96%
+    }
+    .modal-header{
+        padding:0 15px;
+    }
+    .modal-body{
+        padding:25px;
+    }
     .heronewsDetails{
 margin-top:0;
     }
