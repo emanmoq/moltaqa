@@ -358,6 +358,7 @@ display: flex;}
 }
 .programHeader i{
     float: left;
+    color:#FFCC08
 }
 .programBody p{
     color:white;
